@@ -1,0 +1,21 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.main{
+ display: flex;
+}
+
+.lado_izq{
+    background-color: rgb(203, 186, 219);
+    width: 50vw;
+    height: 100vh;
+}
+
+.lado_der{
+    width: 50vw;
+    height: 100vh;
+}
+
