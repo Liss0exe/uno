@@ -33,6 +33,25 @@
  font-size: 20px;
 }
 
+.header{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.Titulo{
+ font-size: 80px;
+ text-align: center;
+}
+
+.subtitulo{
+ font-size: 50px;
+}
+
+.nombre{
+ font-size: 20px;
+}
+
 .lado_der{
     width: 50vw;
     height: 100vh;
