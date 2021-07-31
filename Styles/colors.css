@@ -4,6 +4,11 @@
  box-sizing: border-box;
 }
 
+.titulo{
+ font-size: 80px;
+ text-align: center;
+}
+
 .circle1{
  background-color: rgb(241, 159, 248);
  width: 100px;

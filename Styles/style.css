@@ -63,9 +63,15 @@
 }
 
 .details{
-    font-size: 50px;
+ font-size: 50px;
 }
 
-.ol{
-    list-style-type: none;
+.hi{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ul{
+ list-style-type: none;
+ font-size: 30px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
