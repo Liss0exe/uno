@@ -10,3 +10,10 @@
  height:100px;
  border-radius: 50%;
 }
+
+.circle2{
+ background-color: rgb(0, 0, 0);
+ width: 100px;
+ height:100px;
+ border-radius: 50%;
+}
