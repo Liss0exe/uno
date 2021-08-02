@@ -103,4 +103,5 @@ li{
 
 li > p{
  margin: 0 5px;
+ text-align: center;
 }
