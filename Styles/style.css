@@ -17,21 +17,17 @@
 .header{
  display: flex;
  flex-direction: column;
- justify-content: space-around;
 }
 
 .Titulo{
- font-size: 80px;
+ font-size: 100px;
  text-align: center;
  font-style: italic;
 }
 
 .subtitulo{
- font-size: 50px;
-}
-
-.nombre{
- font-size: 20px;
+ font-size: 10px;
+ text-align: center;
 }
 
 .header{
