@@ -1,0 +1,73 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.main{
+ display: flex;
+}
+
+.lado_izq{
+ background-color: rgb(203, 186, 219);
+ width: 50vw;
+ height: 100vh;
+}
+
+.header{
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: space-around;
+}
+
+.Titulo{
+ text-align: center;
+ font-size: 80px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.subtitulo{
+ text-align: center;
+ font-size: 19px;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.nombre{
+ text-align: center;
+ font-family: serif;
+}
+
+.lado_der{
+ width: 50vw;
+ height: 100vh;
+}
+
+.uno{
+ font-size: 100px;
+ color: white;
+ text-align: center;
+}
+
+.contenedor{
+ display: flex;
+ align-items: center;
+}
+
+.paginas{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-style: 100px;
+}
+
+.practicas{
+ font-family: initial;
+ font-style: 100px;
+}
+
+.ul{
+ list-style-type: none;
+}
+
+#lista{
+    font-size: 38px
+}
