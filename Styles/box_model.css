@@ -1,12 +1,47 @@
 *{
  padding: 0;
  margin: 0;
- box-sizing: border-box;
    }
 
+h1{
+ font-size: 50px;
+ text-align: center;
+ border: 5px solid rgb(196, 247, 208);
+ padding-top: 15px;
+}
+
 .caja{
- height: 150px;
- width: 200px;
- border: 5px solid black;
- padding: 50px;
+ height: 300px;
+ width: 150px;
+ border: 10px solid rgb(59, 59, 59);
+
+ padding: 30px;
+
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 20px;
+}
+
+.caja2{
+ height: 300px;
+ width: 150px;
+ border: 10px solid rgb(248, 187, 248);
+
+ padding: 20px;
+
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 20px;
+}
+
+.caja3{
+ height: 300px;
+ width: 150px;
+ border: 10px solid rgb(187, 244, 248);
+
+ padding: 10px;
+
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 20px;
 }
