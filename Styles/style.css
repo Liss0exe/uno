@@ -42,7 +42,7 @@ a{
 nav > a {
  padding: 14px 20px;
  display: block;
- color: rgb(119, 119, 119);
+ color: #fff;
  text-align: center;
  text-decoration: none;
 }
@@ -57,10 +57,10 @@ nav > a {
  transition: 0.2s;
 }
 
-.btn-neon:hover{
- background: rgb(231, 231, 231);
- box-shadow: 0 0 10px rgb(231, 231, 231), 0 0 40px 
- rgb(231, 231, 231), 0 0 80px rgb(231, 231, 231);
+.btn-neon:hover{ 
+ background: rgb(206, 188, 216);
+ box-shadow: 0 0 10px rgb(206, 188, 216), 0 0 40px 
+ rgb(206, 188, 216), 0 0 80px rgb(206, 188, 216);
  transition-delay: 1s;
 }
 
@@ -74,7 +74,7 @@ nav > a {
  left: -100%;
  width: 100%;
  height: 2px;
- background: linear-gradient(90deg, transparent, rgb(231, 231, 231));
+ background: linear-gradient(90deg, transparent, rgb(206, 188, 216));
 }
 
 .btn-neon:hover #span1{
@@ -93,9 +93,9 @@ nav > a {
  }
 
  .btn-neon2:hover{
-  background: rgb(231, 231, 231);
-  box-shadow: 0 0 10px rgb(231, 231, 231), 0 0 40px 
-  rgb(231, 231, 231), 0 0 80px rgb(231, 231, 231);
+  background: rgb(206, 188, 216);
+  box-shadow: 0 0 10px rgb(206, 188, 216), 0 0 40px 
+  rgb(206, 188, 216), 0 0 80px rgb(206, 188, 216);
   transition-delay: 0.3s;
  }
 
