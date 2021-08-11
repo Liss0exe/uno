@@ -37,7 +37,7 @@ nav{
  padding: 0;
  overflow: hidden;
  background-color: rgb(20, 20, 20);
-   }
+}
    
 a{
  float: left;
@@ -102,3 +102,28 @@ nav > a {
  rgb(95, 175, 92), 0 0 80px rgb(95, 175, 92);
  transition-delay: 0.3s;
 }
+
+.main{
+ padding-left: 20px;
+ padding-top: 40px;
+ padding-bottom: 20px;
+ padding-right: 20px;
+}
+
+.contenedor{
+ justify-content: center;
+}
+
+h2{
+ font-family: 'Poiret One', cursive;
+ text-align: center;
+ font-size: 50px;
+ text-shadow: 5px 5px 5px #313131;
+}
+
+#img-gif{
+ width: 500px;
+ height: 250px;
+ padding-top: 20px;
+}
+
