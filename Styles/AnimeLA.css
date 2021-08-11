@@ -121,9 +121,11 @@ h2{
  text-shadow: 5px 5px 5px #313131;
 }
 
-#img-gif{
+.centrado2{
  width: 500px;
  height: 250px;
  padding-top: 20px;
+ margin:10px auto;
+ display:block;
 }
 
