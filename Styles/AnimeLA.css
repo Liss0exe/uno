@@ -124,8 +124,22 @@ h2{
 .centrado2{
  width: 500px;
  height: 250px;
- padding-top: 20px;
+ padding-top: 50px;
  margin:10px auto;
  display:block;
 }
 
+h3{
+ text-align: center;
+ font-family: 'Patrick Hand SC', cursive;
+ font-size: 70px;
+ padding-top: 90px;
+ color: rgb(0, 0, 0);
+}
+
+.Texto{
+ padding-top: 25px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 23px;
+}
