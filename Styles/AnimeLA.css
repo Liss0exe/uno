@@ -3,10 +3,11 @@
  margin: 0;
  box-sizing: border-box;
   }   
-  
+
+  /* Inicio de imagen y nombre de la página*/
 body{
  margin: 0;
- background-color: rgb(233, 233, 233);
+ background-color: rgb(245, 245, 245);
 }
 
 header > h1{
@@ -31,6 +32,10 @@ header{
  width: 90px;
 }
 
+/* Fin de imagen y nombre de la página*/
+
+
+/* Inicio de barra de navegación*/
 nav{
  margin: 0;
  list-style-type: none;
@@ -50,7 +55,8 @@ nav > a {
  text-align: center;
  text-decoration: none;
 }
-   
+ 
+/* Inicio de cambio de color*/
 .btn-neon{
  position: relative;
  display: inline-block;
@@ -102,6 +108,8 @@ nav > a {
  rgb(95, 175, 92), 0 0 80px rgb(95, 175, 92);
  transition-delay: 0.3s;
 }
+/* Fin de cambio de color*/
+/* Fin de barra de navegación*/
 
 .main{
  padding-left: 20px;
@@ -110,6 +118,7 @@ nav > a {
  padding-right: 20px;
 }
 
+/*Contenido*/
 .contenedor{
  justify-content: center;
 }
@@ -121,7 +130,7 @@ h2{
  text-shadow: 5px 5px 5px #313131;
 }
 
-.centrado2{
+.centrado{
  width: 500px;
  height: 250px;
  padding-top: 50px;
@@ -129,7 +138,7 @@ h2{
  display:block;
 }
 
-h3{
+.nombre{
  text-align: center;
  font-family: 'Patrick Hand SC', cursive;
  font-size: 70px;
@@ -137,9 +146,71 @@ h3{
  color: rgb(0, 0, 0);
 }
 
-.Texto{
- padding-top: 25px;
+.Texto1{
+ padding-top: 30px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 35px;
+}
+
+.Texto2{
+ padding-top: 30px;
  text-align: center;
  font-family: 'Open Sans Condensed', sans-serif;
  font-size: 23px;
+ padding-bottom: 25px;
 }
+
+.centrado2{
+ background-color: white;
+ padding-top: 50px;
+ margin:10px auto;
+ display:block;
+ border-top-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 30px;
+}
+
+ /* Inicio de Boton*/
+.boton{
+ background-color: #490a0a;
+ color: #fff;
+ font-family: 'Russo One', sans-serif;
+ margin:10px auto;
+ display:block;
+ width: 60px;
+ height: 50px;
+ border: 3px solid #490a0a;
+ border-top-left-radius: 12px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 12px;
+ transition-duration: 0.4s;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-weight: bolder;
+ text-shadow: 0.5px 0px 5px #080808;
+}
+
+.boton:hover {
+ background-color: #080808;
+ border: 3px solid #000000;
+ box-shadow: 0 8px 16px 0 rgb(104, 104, 104), 
+ 0 6px 20px 0 rgb(104, 104, 104);
+}
+ /* Fin de Boton*/
+/*Fin de contenido*/
+
+.footer-cont{
+ background-color: rgb(0, 0, 0);
+ padding-top: 25px;
+}
+
+.Texto3{
+ font-family: 'Gruppo', cursive;
+ color: white;
+ text-align: center;
+ font-size: 45px;
+}
+/*Fin de Footer*/
