@@ -1,31 +1,40 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
 }   
-
+   
+ /* Inicio de imagen y nombre de la página*/
 body{
  margin: 0;
+ background-color: rgb(255, 255, 255);
 }
-
+   
 header > h1{
  display: inline-block;
  margin-left: 10px;
  margin-top: 20px;
- font-family: 'Mate SC', serif;
-
+ font-family: 'Titillium Web', sans-serif;
+ color: #ffffff;
+ letter-spacing: 1.5px;
+ font-size: 40px;
+ text-shadow: 10px 10px 10px #050505;
 }
-
-.header{
- display: flex;
- background-color: #c00d0d;
- color: white;
- padding: 0 10%;
+   
+header{
+display: flex;
+background-color: #7c0e52;
+color: white;
+padding: 0 3%;
 }
-
+   
 #logo{
- width: 90px;
+width: 90px;
 }
+   
+/* Fin de imagen y nombre de la página*/
+   
+   /* Inicio de barra de navegación*/
 
 nav{
  margin: 0;
@@ -34,11 +43,11 @@ nav{
  overflow: hidden;
  background-color: rgb(20, 20, 20);
 }
-
+      
 a{
- float: left;
+float: left;
 }
-
+      
 nav > a {
  padding: 14px 20px;
  display: block;
@@ -46,7 +55,8 @@ nav > a {
  text-align: center;
  text-decoration: none;
 }
-
+    
+/* Inicio de cambio de color*/
 .btn-neon{
  position: relative;
  display: inline-block;
@@ -56,177 +66,130 @@ nav > a {
  font-size: 20px;
  transition: 0.2s;
 }
-
+      
 .btn-neon:hover{ 
- background: rgb(206, 188, 216);
- box-shadow: 0 0 10px rgb(206, 188, 216), 0 0 40px 
- rgb(206, 188, 216), 0 0 80px rgb(206, 188, 216);
+ background: rgb(253, 208, 255);
+ box-shadow: 0 0 10px rgb(253, 208, 255), 0 0 40px 
+ rgb(253, 208, 255), 0 0 80px rgb(253, 208, 255);
  transition-delay: 1s;
 }
-
+      
 .btn-neon span{
  position: absolute;
  display: block;
 }
-
+      
 #span1{
  top: 0;
  left: -100%;
  width: 100%;
  height: 2px;
- background: linear-gradient(90deg, transparent, rgb(206, 188, 216));
+ background: linear-gradient(90deg, transparent, rgb(253, 208, 255));
 }
-
+      
 .btn-neon:hover #span1{
  left: 100%;
  transition: 1s;
 }
-
+      
 .btn-neon2{
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: #fff;
-  letter-spacing: 4px;
-  font-size: 20px;
-  transition: 0.2s;
- }
-
- .btn-neon2:hover{
-  background: rgb(206, 188, 216);
-  box-shadow: 0 0 10px rgb(206, 188, 216), 0 0 40px 
-  rgb(206, 188, 216), 0 0 80px rgb(206, 188, 216);
-  transition-delay: 0.3s;
- }
-
-#AnimeLA1{
- width: 750px;
- margin: 50px auto;
+ position: relative;
+ display: inline-block;
+ padding: 15px 30px;
+ color: #fff;
+ letter-spacing: 4px;
+ font-size: 20px;
+ transition: 0.2s;
 }
-
-#left{
- width: 300px;
- height: 400px;
- float: left;
- background-color: teal;
+      
+.btn-neon2:hover{ 
+ background: rgb(253, 208, 255);
+ box-shadow: 0 0 10px rgb(253, 208, 255), 0 0 40px 
+ rgb(253, 208, 255), 0 0 80px rgb(253, 208, 255);
+transition-delay: 0.3s;
+}
+/* Fin de cambio de color*/
+/* Fin de barra de navegación*/
+   
+.main{
+ padding-left: 20px;
+ padding-top: 40px;
+ padding-bottom: 20px;
+ padding-right: 20px;
+}
+   
+/*Contenido*/
+.contenedor{
+ justify-content: center;
+}
+   
+h2{
+ font-family: 'Poiret One', cursive;
+ text-align: center;
+ font-size: 50px;
+ text-shadow: 5px 5px 5px #313131;
+}
+   
+.centrado{
+ width: 500px;
+ height: 250px;
+ padding-top: 50px;
+ margin:10px auto;
+ display:block;
+}
+   
+.Texto1{
+ padding-top: 70px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 35px;
+}
+   
+.Texto2{
+ padding-top: 30px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 23px;
+ padding-bottom: 25px;
+}
+   
+.centrado2{
+ padding-top: 50px;
+ padding-bottom: 50px;
+ margin:10px auto;
+ display:block;
  border-top-left-radius: 30px;
- border-bottom-left-radius: 30px;
- border-top-right-radius: 30px;
-}
-
-#right{
- width: 350px;
- height: 400px;
- margin-top: 50px;
- background-color: teal;
- border-left-color: rgb(6, 104, 104);
- border-left-style: solid;
- border-left-width: 3px;
- float: left;
  border-bottom-right-radius: 30px;
  border-bottom-left-radius: 30px;
  border-top-right-radius: 30px;
 }
-
-.display{
- border-color: #494949;
- border-style: solid;
- border-radius: 15px;
- border-width: 3px;
-}
-
-#left > .display{
- width: 220px;
- height: 200px;
- margin-left: 35px;
- margin-top: 40px;
- background-color: rgb(190, 188, 188);
-}
-
-#left > .display > img{
- margin-left: 15px;
- height: 100%;
-}
-
-#dpad{
-  width: 60px;
-  height: 60px;
-  margin-top: 20px;
-  margin-left: 20px;
-  display: inline-block;
-}
-
-#dpad-top, #dpad-bottom{
- width: 20px;
- height: 20px;
- margin-left: 20px;
- background-color: #ffe924;
- border-color: black;
-}
-
-#dpad-horizon{
- width: 60px;
- height: 20px;
- background-color: #ffe924;
- border-color: black;
-}
-
-#btn-circle{
- width: 50px;
+   
+    /* Inicio de Boton*/
+.boton{
+ background-color: #490a0a;
+ color: #fff;
+ font-family: 'Russo One', sans-serif;
+ margin:10px auto;
+ display:block;
+ width: 100px;
  height: 50px;
- margin-left: 135px;
- border-style: solid;
- border-color: #611212;
- border-radius: 25px;
- background-color: rgb(235, 42, 42);
- display: inline-block;
+ border: 3px solid #490a0a;
+ border-top-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 30px;
+ transition-duration: 0.4s;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-weight: bolder;
+ text-shadow: 0.5px 0px 5px #080808;
 }
-
-#right > .display{
- width: 250px;
- height: 150px;
- margin-left: 50px;
- margin-top: 50px;
- background-color: rgb(111, 158, 111);
- font-size: 16px;
+   
+.boton:hover {
+ background-color: #080808;
+ border: 3px solid #000000;
+ box-shadow: 0 8px 16px 0 rgb(104, 104, 104), 
+ 0 6px 20px 0 rgb(104, 104, 104);
 }
-
-#pad{
- width: 148px;
- height: 65px;
- margin-left: 100px;
- margin-top: 50px;
-}
-
-#pad > .btn{
- width: 32px;
- height: 32px;
- background-color: #46c00d;
- display: inline-block;
- border-style: solid;
- border-color: #326112;
- border-width: 3px;
- border-radius: 4px;
-}
-
-ul{
- margin: 9px;
- padding: 3px;
-}
-
-li{
- list-style-type: none;
-}
-
-li > p{
- margin: 0 5px;
- text-align: justify;
- font-family: 'Cinzel', serif;
- font-family: 'Rajdhani', sans-serif;
-}
-
-#pkmn-img{
- width: 160px;
- height: 100px;
-}
-
+    /* Fin de Boton*/
+   /*Fin de contenido*/
