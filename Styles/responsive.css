@@ -1,5 +1,23 @@
 @media screen and (max-widht: 500px) {
- body{
-    background-color: rgb(138, 61, 34);
+ header{
+   background-color: rgb(30, 90, 110);
  }
 }
+
+a{
+   float: left;
+   text-align: center;
+   color: #241521;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+  }
+        
+  nav > a {
+   padding: 14px 20px;
+   display: block;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+  }
