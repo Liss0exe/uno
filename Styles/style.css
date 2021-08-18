@@ -11,9 +11,8 @@ body {
 }
 
 .header {
- background-color: #7c0e52;
+ background-color: #14777e;
  height: 80px;
- position: fixed;
  width: 100%;
  top: 0;
  left: 0;
@@ -28,28 +27,28 @@ body {
 }
 
 .nav-link {
- color: #fff;
+ color: rgb(0, 0, 0);
  text-decoration: none;
 }
 
-.class-marca {
- font-size: 30px;
+.logo {
+ font-size: 25px;
  font-weight: bold;
- padding: 0 40px;
+ padding: 5px;
  line-height: 80px;
  font-family: 'Titillium Web', sans-serif;
 }
 
-.nav-menu{
+.nav-menu {
  display: flex;
  width: auto;
  float: right;
- margin-right: 40px;
+ margin-right: 5px;
  list-style: none;
 }
 
-.nav-menu-item{
- font-size: 18px;
+.nav-menu-item {
+ font-size: 15px;
  margin: 0 10px;
  line-height: 80px;
  text-transform: uppercase;
@@ -62,7 +61,7 @@ body {
 }
 
 .nav-menu-link:hover {
- background-color: rgb(56, 27, 70);
+ background-color: rgb(190, 247, 255);
  transition: 1s;
 }
 
@@ -91,7 +90,7 @@ body {
 }
 
 .h2 {
- padding-top: 100px;
+ padding-top: 20px;
 }
    
 h2 {
@@ -102,7 +101,7 @@ h2 {
 }
    
 .centrado {
- width: 500px;
+ width: 360px;
  height: 250px;
  padding-top: 50px;
  margin:10px auto;
@@ -167,41 +166,15 @@ h2 {
 
 /*INICIO: Responsive*/
 
-@media screen and (max-width: 500px) {
- .logo{
-  font-size: 10px;
-  font-weight: normal;
-  margin-left: 3px;
- }   
-  
- .nav-menu {
-  margin-right: 5px;
- }
-
- .nav-menu-link {
-  font-size: 9px;
-  padding: 2px 5px;
- }
-    
- h2 {
-  font-size: 35px;
- }
-
- .header {
+@media screen and(max-width: 500px) {
+ .nav {                 /*Clase nav */
   padding: 0px;
-  margin-bottom: 10px;
-  justify-content: space-between;
-  align-content: flex-start;
-  background-color: #0b3742;
- }
-  
- .nav {
-  padding: 0px;
-  width: 100%;
-  top: auto;
- }
+  widht: 100%;
+  height: auto;
+  flex-direction: column;
+ } 
 
- .nav-menu-item {
+ .nav-menu {            /* Clase ítems-nav */
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0px;
@@ -209,16 +182,41 @@ h2 {
   width: 80px;
  }
 
- .nav-menu {
+ .nav-menu-item {       /* Clase ítems-menu */
+  flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+ }
+
+ .nav-menu-link {       /* Clase ítem */
+  width: 90%;
+  margin-bottom: 30px;
+  flex-direction: column;
+ }
+
+ .header {             /* Clase header */
+  padding: 0px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
  }
 }
 
 @media screen and (min-widht: 505px) {
- .nav-menu-item{
+ .nav-menu-link {        /* Clase ítem */
   width: 70%;
- } 
+ }
+
+  nav {                  /*Elemento nav */
+  top: 120px;
+ }
+}
+
+@media screen and (min-widht: 700px) {
+ .nav-menu-link {        /* Clase ítem */
+  width: 70%;
+ }
 
  nav{
     height: 120px;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONAL</title>
+</head>
+<body>
+    <h1>Condicional JS</h1>
+
+    <script>
+        /*
+        //alert("¡Hola mundo! Soy un alert")
+        let inputEdad = prompt("Ingresa tu edad:")
+        let edad = Number(inputEdad);
+        console.log( typeof(edad) )
+        //console.log( typeof(inputEdad) )
+
+        //alert("Tienes: " +inputEdad);
+
+        //CONDICIONALES
+        if (edad < 12 ) {
+            console.log("Eres un niño porque tienes: " + inputEdad + " años")
+        } else if (edad > 12 && inputEdad < 18) {
+            console.log("Eres un adolocente porque tienes: " + inputEdad + " años")
+        } else if (edad >= 18) {
+            console.log("Eres un adulto porque tienes: " + inputEdad + " años")
+        } else {
+            console.log("Por favor introduce un número valido")
+        } */
+
+        let inputDia = prompt("Introduce un número del 0 - 6:")
+        let dia = Number(inputDia)
+
+        if( dia == 0 ){
+            console.log("Hoy es Domingo");
+        } else if(dia == 1){
+            console.log("Hoy es Lunes")
+        } else if(dia == 2){
+            console.log("Hoy es Martes")
+        } else if(dia == 3){
+            console.log("Hoy es Miercoles")
+        } else if (dia == 4) {
+            console.log("Hoy es Jueves")
+        } else if (dia == 5) {
+            console.log("Hoy es Viernes")
+        } else if (dia == 6) {
+            console.log("Hoy es Sabado")
+        } else {
+            console.log("Por favor introducd un número del 0 - 6 u.u")
+        }
+
+    </script>
+</body>
+</html>

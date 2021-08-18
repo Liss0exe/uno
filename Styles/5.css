@@ -1,0 +1,223 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+} 
+
+/* Inicio de imagen y nombre de la página*/
+body {
+ margin: 0;
+ background-color: rgb(245, 245, 245);
+}
+
+.header {
+ background-color: #14777e;
+ color: white;
+ padding: 0 3%;
+ display: flex;
+}
+
+header > h1 {
+ display: inline-block;
+ margin-left: 10px;
+ margin-top: 20px;
+ font-family: 'Titillium Web', sans-serif;
+ color: #ffffff;
+ letter-spacing: 1.5px;
+ font-size: 40px;
+ text-shadow: 10px 10px 10px #050505;
+}
+
+#logo {
+ width: 90px;
+}
+/* Fin de imagen y nombre de la página*/
+
+/* Inicio de barra de navegación*/
+nav {
+ margin: 0;
+ list-style-type: none;
+ padding: 0;
+ overflow: hidden;
+ background-color: rgb(20, 20, 20);
+}
+
+.nav {
+ display: flex;
+ list-style: none;
+}
+
+.items-nav {
+ font-size: 10px;
+ text-transform: uppercase;
+ width: max-content;
+}
+
+.items {
+ float: left;
+ display: block;
+ color: #fff;
+ text-align: center;
+ text-decoration: none
+}
+
+/* Inicio de cambio de color*/
+.btn-neon {
+ position: relative;
+ display: inline-block;
+ padding: 15px 30px;
+ color: #fff;
+ letter-spacing: 4px;
+ font-size: 20px;
+ transition: 0.2s;
+}
+      
+.btn-neon:hover { 
+ background: rgb(155, 215, 223);
+ box-shadow: 0 0 10px rgb(155, 215, 223), 0 0 40px 
+ rgb(155, 215, 223), 0 0 80px rgb(155, 215, 223);
+ transition-delay: 1s;
+ }
+      
+.btn-neon span {
+ position: absolute;
+ display: block;
+}
+      
+#span1 {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, rgb(155, 215, 223));
+}
+      
+.btn-neon:hover #span1 {
+ left: 100%;
+ transition: 1s;
+}
+      
+.btn-neon2 {
+ position: relative;
+ display: inline-block;
+ padding: 15px 30px;
+ color: #fff;
+ letter-spacing: 4px;
+ font-size: 20px;
+ transition: 0.2s;
+}
+      
+.btn-neon2:hover {
+ background: rgb(155, 215, 223);
+ box-shadow: 0 0 10px rgb(155, 215, 223), 0 0 40px 
+ rgb(155, 215, 223), 0 0 80px rgb(155, 215, 223);
+ transition-delay: 0.3s;
+}
+
+.btn-neon3 {
+ position: relative;
+ display: inline-block;
+ padding: 15px 30px;
+ color: #fff;
+ letter-spacing: 4px;
+ font-size: 20px;
+ transition: 0.2s;
+}
+         
+.btn-neon3:hover {
+ background: rgb(155, 215, 223);
+ box-shadow: 0 0 10px rgb(155, 215, 223), 0 0 40px 
+ rgb(155, 215, 223), 0 0 80px rgb(155, 215, 223);
+ transition-delay: 0.3s;
+}
+ /* Fin de cambio de color*/
+ /* Fin de barra de navegación*/
+
+/*Inicio de contenido*/
+.main {
+ padding-left: 20px;
+ padding-top: 40px;
+ padding-bottom: 20px;
+ padding-right: 20px;
+}
+
+.contenedor {
+justify-content: center;
+}
+   
+.h2 {
+ padding-top: 20px;
+}
+      
+h2 {
+ font-family: 'Poiret One', cursive;
+ text-align: center;
+ font-size: 50px;
+ text-shadow: 5px 5px 5px #313131;
+}
+      
+.centrado {
+ width: 360px;
+ height: 250px;
+ padding-top: 50px;
+ margin:10px auto;
+ display:block;
+}
+      
+.Texto1 {
+ padding-top: 70px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 35px;
+}
+      
+.Texto2 {
+ padding-top: 30px;
+ text-align: center;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 23px;
+ padding-bottom: 25px;
+}
+      
+.centrado2 {
+ padding-top: 50px;
+ padding-bottom: 50px;
+ margin:10px auto;
+ display:block;
+ border-top-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 30px;
+}
+      
+/* Inicio de Boton*/
+.boton {
+ background-color: #490a0a;
+ color: #fff;
+ font-family: 'Russo One', sans-serif;
+ margin:10px auto;
+ display:block;
+ width: 100px;
+ height: 50px;
+ border: 3px solid #490a0a;
+ border-top-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 30px;
+ transition-duration: 0.4s;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-weight: bolder;
+ text-shadow: 0.5px 0px 5px #080808;
+}
+      
+.boton:hover {
+ background-color: #080808;
+ border: 3px solid #000000;
+ box-shadow: 0 8px 16px 0 rgb(104, 104, 104), 
+ 0 6px 20px 0 rgb(104, 104, 104);
+}
+/* Fin de Boton*/
+/*Fin de contenido*/
+   
+/*INICIO: Responsive*/
