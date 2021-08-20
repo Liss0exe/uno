@@ -77,8 +77,8 @@ nav {
       
 .btn-neon:hover { 
  background: rgb(155, 215, 223);
- box-shadow: 0 0 10px rgb(155, 215, 223), 0 0 40px 
- rgb(155, 215, 223), 0 0 80px rgb(155, 215, 223);
+ box-shadow: 0 0 0 rgb(155, 215, 223), 0 0 40px 
+ rgb(155, 215, 223), 0 0 100px rgb(155, 215, 223);
  transition-delay: 1s;
  }
       
@@ -89,14 +89,14 @@ nav {
       
 #span1 {
  top: 0;
- left: -100%;
- width: 100%;
+ left: -10000%;
+ width: 10000%;
  height: 2px;
  background: linear-gradient(90deg, transparent, rgb(155, 215, 223));
 }
       
 .btn-neon:hover #span1 {
- left: 100%;
+ left: 10000%;
  transition: 1s;
 }
       
@@ -234,7 +234,7 @@ h2 {
   flex-direction: column;
  }
 
- .items-nav{
+ .items-nav {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0;
@@ -279,11 +279,29 @@ h2 {
   width: 320px;
   height: 270px;
  }
+
+ .btn-neon {
+  padding: 26px 150px;
+  width: 0px;
+  margin: 0;
+ }
+
+ .btn-neon2 {
+  padding: 26px 150px;
+  width: 0;
+  margin: 0;
+ }
+
+ .btn-neon3 {
+  padding: 26px 150px;
+  margin: 0;
+  width: 0;
+ }
 }
 /* FIN: Dispositivo con un ancho máximo de 500px */
 
 /* INICIO: Dispositivo con un ancho mínimo de 505px */
-@media screen and (min-widht:505px) {
+@media screen and (min-width: 505px){
  .items {
   width: 70%;
  }
@@ -291,11 +309,32 @@ h2 {
  nav {
   height: 120px;
  }
+
+ .btn-neon {
+   padding: 26px 37px;
+ }
+  
+ .btn-neon2 {
+   padding: 26px 37px;
+ }
+  
+ .btn-neon3 {
+  padding: 26px 37px;
+ }
+   
+ h2 {
+  font-size: 35px;
+ }
+
+ .Texto1 {
+  padding-top: 20px;
+  font-size: 21px;
+ }
 }
 /* FIN: Dispositivo con un ancho mínimo de 505px */
 
 /* INICIO: Dispositivo con un ancho mínimo de 700px */
-@media screen and (min-widht:700px) {
+@media screen and (min-width: 700px){
  .items {
   width: 70%;
  }
@@ -304,33 +343,120 @@ h2 {
   height: 75px;
   justify-content: flex-start;
  }
+
+ .btn-neon {
+    padding: 26px 40px;
+  }
+   
+  .btn-neon2 {
+    padding: 26px 40px;
+  }
+   
+  .btn-neon3 {
+   padding: 26px 40px;
+  }
+    
+  h2 {
+   font-size: 50px;
+  }
+ 
+  .Texto1 {
+   padding-top: 40px;
+   font-size: 39px;
+  }
+
+  .Texto2 {
+   font-size: 30px;
+  }
 }
 /* FIN: Dispositivo con un ancho mínimo de 700px */
 
 /* INICIO: Dispositivo con un ancho mínimo de 980px */
-@media screen and (min-widht:980px) {
+@media screen and (min-width: 980px){
  .items {
   width: 30%;
+ }
+
+ .btn-neon { 
+    padding: 26px 130px;
+  }
+   
+  .btn-neon2 {
+    padding: 26px 130px;
+  }
+   
+  .btn-neon3 {
+   padding: 26px 130px;
+  }
+    
+  h2 {
+   font-size: 70px;
+  }
+
+  .centrado {
+   padding-top: 10px;
+   width: auto;
+   height: auto;
+  }
+ 
+  .Texto1 {
+   padding-top: 40px;
+   font-size: 55px;
+  }
+
+  .Texto2 {
+   font-size: 45px;
+  }
+  
+  .centrado2 {
+   width: 700px;
+   height: 450px;
+ }
+
+ .boton {
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
  }
 }
 /* FIN: Dispositivo con un ancho mínimo de 980px */
 
 /* INICIO: Dispositivo con un ancho mínimo de 1040px */
-@media screen and (min-widht:1040px) {
+@media screen and (min-width: 1040px){
  h2 {
-  font-size: 100px;
+  font-size: 70px;
  } 
- .boton {
-  width: 500px;
-  height: 100px;  
+
+ .centrado {
+  padding-top: 10px;
+  width: 600px;
+  height: 350px;
  }
- 
+
+ .centrado2 {
+  width: 700px;
+  height: 450px;
+  }
+
+ .boton {
+  width: 200px;
+  height: 70px;  
+ }
 }
 /* FIN: Dispositivo con un ancho mínimo de 1040px */
 
 /* INICIO: Dispositivo con un ancho mínimo de 1200px */
-@media screen and (min-widht: 1200) {
- 
+@media screen and (min-width: 1200px){
+ .items {
+  width: 22%;
+ }
+
+ main {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+ }
 }
 /* FIN: Dispositivo con un ancho mínimo de 1200px */
 /*FIN: Responsive*/
