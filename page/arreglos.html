@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays JS</title>
+</head>
+<body>
+    <h1>Arrays JS</h1>
+
+
+    <script>
+    
+    // Declaramos un array
+    // Posición:      0        1     2
+    let cajon = ['Levi', 'Jimin', 'Tomoe']; // tamaño 3
+
+    //obtener valor específico
+    //console.log( cajon[1]  );
+
+    // Modificar un valor del arreglo
+    cajon[2] = 'Shikamaru';
+    //console.log( cajon );
+
+    // Tamaño de mi arreglo
+    //console.log( "El tamaño del arreglo es de: " + cajon.length  );
+
+    // Agregar un nuevo elemento al arreglo
+    cajon.push("Chifuyu");
+    //console.log( cajon );
+
+    // Eliminar elementos del arreglo
+    // pop() elimina el último elemento
+    cajon.pop();
+    cajon.shift();
+    //console.log( cajon );
+
+
+
+    // Bucle for
+    /*
+    console.log("Aquí empieza el bucle");
+    let estado = 0;
+    //  estado_inicial; condición; siguiente_estado
+    for( estado;  estado < 3 ;  estado ++ ){
+      console.log("Hola chicos");
+    }
+    console.log("Fin del bucle");
+    */
+
+    console.log(cajon);
+    let estado = 0;
+    let tamano = cajon.length; // 2
+    //                   0          1     
+    // cajonera = ['pantalones', 'calcetas'];
+    for( estado; estado < tamano ; estado ++){
+      console.log( cajon[estado] );
+    }
+    </script>
+</body>
+</html>
