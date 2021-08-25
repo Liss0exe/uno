@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JS</title>
+</head>
+<body>
+    <h1>Function JS</h1>
+    <button onclick="showAlert();">¡Lets go!</button>
+
+    <button value="blue" onclick="changeColor(value)">Blue</button>
+    <button value="red" onclick="changeColor(value)">Red</button>
+    <button value="#03fc62" onclick="changeColor(value)">Green</button>
+
+    <script>
+
+        const changeColor = ( color )=>{
+         document.body.style.backgroundColor = color;
+        }
+
+
+
+
+        //Declarar nuestra función.
+        function saludar(){
+            //codigo
+            console.log("Hola");
+        }
+
+        //Funciones que retornan algo.
+        /*const saludar2 = () =>{
+            return "Hola";
+        }*/
+        //console.log( saludar2() );
+
+        const suma = (num1, num2) =>{
+            return num1 + num2
+        }
+        let resultadoSuma = suma( 10, 5 );
+        console.log( resultadoSuma );   
+        
+
+        //Funciónes de flecha/ arrow functions
+        const despedida = () =>{
+            console.log("Adios");
+        }
+
+        const showAlert = () =>{
+            alert("Me diste click");
+        }
+
+        //Función con parametro.
+        const anime = ( página ) =>{
+            console.log("Vamos a ver Tokyo Revenger en " + página );
+        }
+
+        const saludarAmigo = (saludo, amigo) =>{
+            console.log( saludo, amigo);
+        }
+
+        //Parámetros con valor por defecto.
+        const despedidaAmigo = ( despedida="Hasta luego", amigo="Chabelo" ) =>{
+            console.log( despedida, amigo);
+        }
+
+
+        //Lamar a la función.
+        despedidaAmigo("Adios", "Lizet");
+        //  LLAMAR          ARGUMENTOS
+        saludarAmigo("Buenos días", "Jimena" );
+        anime("AnimeFLV");
+        saludar();
+        despedida();
+
+        //EJERCICIO: 
+        const saludar2 = (Nombre, edad, estado) =>{
+            return "Mi nombre es " + Nombre + ", tengo " + 25 + " años y soy de " + estado;
+        }
+        console.log(saludar2('Mario', 25, 'Veracruz.'));
+    </script>
+</body>
+</html>
