@@ -1,0 +1,22 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,173,230,1) 35%, rgba(9,38,85,1) 100%);
+ color: white;
+}
+
+.bg2{
+ background: rgb(238,174,202);
+ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+#img{
+    widht: 360px;
+    height: 240px;
+   }
