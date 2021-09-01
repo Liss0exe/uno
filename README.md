@@ -1,2 +1,0 @@
-# uno
-Mi primer repositorio.
