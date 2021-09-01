@@ -7,9 +7,47 @@
     <title>Ejemplos de interacción JS</title>
 </head>
 <body>
+    
+
     <p id="frase">Haz click en uno de los tres textos de abajo.</p>
-    <a>Pikachu</a>
-    <a>Squirtle</a>
-    <a>Bulbasaur</a>
+    <a onclick="elegirPokemon('Pikachu')">Pikachu</a>
+    <a onclick="elegirPokemon('Squirtle')">Squirtle</a>
+    <a onclick="elegirPokemon('Bulbasaur')">Bulbasaur</a>
+    
+    <!--CAMBIAR DE CONTENIDO HTML: -->
+    <h2>Cambio de contenido HTML</h2>
+    <p id="parrafo">¡Hola mundo!</p>
+
+    <!--IDENTIFICANDO ELEMENTOS HTML POR ID: -->
+    <h2>IDENTIFICANDO ELEMENTOS HTML POR ID</h2>
+    <p id="intro">¡Hola Mundo!</p>
+    <p>Utilizaremos el metodo 'getElementById'</p>
+
+    <p id="demo"></p>
+
+    <!--IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS: -->
+    <h2>IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS</h2>
+    <p>¡Hola Mundo!</p>
+    <p>Utilizaremos el metodo 'getElementsByTagsName'</p>
+    <p id="demo2"></p>
+
+    <script>
+        function elegirPokemon(pokemon){
+            document.getElementById('frase').innerHTML = '¡' + pokemon + ', yo te elijo!';
+        }
+
+        //CAMBIAR DE CONTENIDO HTML:
+        document.getElementById('parrafo').innerHTML = "¡Hola México!";
+
+        //IDENTIFICANDO ELEMENTOS HTML POR ID:
+        var miElemento = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = "El texto del párrafo 'intro' es; " + miElemento.innerHTML;
+
+        //IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS:
+        /* var etiquetas = document.getElementsByTagName("p");
+        document.getElementsById("demo2").innerHTML = "El texto del primer párrafo es: " + etiquetas;
+        */
+       
+    </script>
 </body>
 </html>
