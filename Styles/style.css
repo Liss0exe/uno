@@ -14,7 +14,6 @@ header {
  background-color: #14777e;
  color: white;
  padding: 0 3%;
- 
 }
 
 .header {
@@ -214,6 +213,7 @@ h2 {
  font-weight: bolder;
  text-shadow: 0.5px 0px 5px #080808;
  text-decoration: none;
+ text-align: center;
 }
       
 .boton:hover {
