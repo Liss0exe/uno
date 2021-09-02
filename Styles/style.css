@@ -14,10 +14,11 @@ header {
  background-color: #14777e;
  color: white;
  padding: 0 3%;
- display: flex;
+ 
 }
 
 .header {
+ display: flex;
 }
 
 header > h1 {
