@@ -10,22 +10,17 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
      <!-- FIN DE ESTILOS DE LETRA -->
      <!---ICON-->
-     <link rel="shortcut icon" href="../src/laptop.png" type="image/x-icon">
+     <link rel="shortcut icon" href="../src/pokebola.png" type="image/x-icon">
      <!---END: ICON-->
     
 </head>
 <body>    
 
     <header class="header">
-        <img id="logo" src="../src/laptop.png" alt="logo">
-        <h1 class="">¡Hola mundo!</h1>
+        <img id="logo" src="../src/pokebola.png" alt="logo">
+        <h1 class="">¡PokéDex!</h1>
     </header>
 
     <!---Barra de navegación-->
@@ -50,5 +45,20 @@
         </ul>
     </nav>
     <!---Cierre de barra de navegación-->
+
+    <form action="" onsubmit="searchPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>PokeDéx</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="../src/pokemon.png" alt="Pokemon">
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+
+    <script src="../Js/api.js"></script>
 </body>
 </html>
