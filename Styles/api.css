@@ -2,6 +2,7 @@
  padding: 0;
  margin: 0;
  box-sizing: border-box;
+ text-decoration: none;
 } 
    
 /* Inicio de imagen y nombre de la página*/
@@ -24,7 +25,7 @@ header > h1 {
  display: inline-block;
  margin-left: 10px;
  margin-top: 20px;
- font-family: 'Titillium Web', sans-serif;
+ font-family: 'Bebas Neue', cursive;
  color: #ffffff;
  letter-spacing: 1.5px;
  font-size: 40px;
@@ -136,69 +137,117 @@ nav {
 /* Fin de cambio de color*/
 /* Fin de barra de navegación*/
 
+.parrafo {
+ font-family: 'Alumni Sans', sans-serif;
+ text-align: center;
+ font-size: 25px;
+ padding-top: 40px;
+ padding-bottom: 15px;
+}
+
 form {
-    width: 200px;
-    margin: 20px auto;
+ width: 200px;
+ margin: 20px auto;
 }
 
 input {
-    width: 100%;
-    padding: 10px;
+ width: 100%;
+ padding: 10px;
 }
 
 .poke-card {
-    position: relative;
-    height: fit-content;
-    font-family: 'Roboto Mono', monospace;
-    max-width: 300px;
-    border-radius: 4px;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #FFF;
-    border: 1px solid black;
+ position: relative;
+ height: fit-content;
+ font-family: 'Rampart One', cursive;
+ font-size:25px; 
+ max-width: 300px;
+ border-radius: 4px;
+ text-align: center;
+ padding: 10px;
+ margin: 0 auto;
+ background-color: rgb(255, 255, 255);
+ border: 1px solid black;
 }
 
 .poke-card::before {
-    content: '';
-    background: radial-gradient(black 33%, transparent 33%);
-    background-size: 3px 3px;
-    border-radius: 4px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: -1;
+ content: '';
+ background: radial-gradient(rgb(189, 182, 63) 33%, transparent 33%);
+ background-size: 3px 3px;
+ border-radius: 4px;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ left: 10px;
+ top: 10px;
+ z-index: -1;
 }
 
 .img-container {
-    position: relative;
-    width: 180px;
-    margin: 10px auto;
+ position: relative;
+ width: 180px;
+ margin: 10px auto;
 }
 
 .poke-stats div {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 5px;
-    font-size: 18px;
+ display: flex;
+ justify-content: space-between;
+ align-content: space-between;
+ padding: 5px;
+ font-size: 18px;
 }
 
 .poke-types div {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 4px;
-    border: 1px dashed black;
+ padding: 5px;
+ margin: 5px;
+ border-radius: 4px;
+ border: 1px dashed black;
 }
 
 .poke-img {
-    width: 180px;
-    border-radius: 50%;
+ width: 180px;
+ border-radius: 50%;
 }
 
+.hi {
+ padding-bottom: 25px;
+}
+
+/*INICIO: FOOTER*/
+footer {
+ width: 100%;
+ padding: 20px 0px;
+ background-color: rgb(58, 57, 57);
+}
+
+.contenido-footer {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ max-width: 1200px;
+ margin: auto;
+}
+
+.box-footer {
+ display: flex;
+ flex-direction: column;
+ padding: 40px;
+}
+
+.box-footer .img {
+ background-color: white;
+ width: 130px;
+ height: 50px;
+ border-top-left-radius: 30px;
+ border-bottom-left-radius: 30px;
+ border-top-right-radius: 30px;
+ border-bottom-right-radius: 30px;
+}
+
+.box-footer .terms {
+ max-width: 350px;
+ margin-top: 20px;
+}
+/*FIN:FOOTER*/
 /*INICIO: Responsive*/
 /* INICIO: Dispositivo con un ancho máximo de 500px */
 @media screen and (max-width:500px) {

@@ -9,18 +9,23 @@
      <!-- ESTILOS DE LETRA -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
      <!-- FIN DE ESTILOS DE LETRA -->
+
      <!---ICON-->
      <link rel="shortcut icon" href="../src/pokebola.png" type="image/x-icon">
      <!---END: ICON-->
+
+     <script src="https://kit.fontawesome.com/8c5c151594.js" crossorigin="anonymous"></script>
     
 </head>
 <body>    
 
     <header class="header">
         <img id="logo" src="../src/pokebola.png" alt="logo">
-        <h1 class="">¡PokéDex!</h1>
+        <h1>¡PokéDex!</h1>
     </header>
 
     <!---Barra de navegación-->
@@ -46,6 +51,8 @@
     </nav>
     <!---Cierre de barra de navegación-->
 
+    <p class="parrafo">Escriba un número o nombre del Pokemon que busca:</p>
+
     <form action="" onsubmit="searchPokemon(event)">
     <input type="text" name="pokemon" autocomplete="off">
     </form>
@@ -58,7 +65,37 @@
         <div data-poke-types class="poke-types"></div>
         <div data-poke-stats class="poke-stats"></div>
     </div>
+    <p class="hi">ㅤㅤ</p>
+    <!--INICIO: FOOTER-->
+    <footer>
 
+        <div class="contenido-footer">
+            <div class="box-footer">
+                <div class="img">
+                    <img src="../src/POKEDEX.png" alt="LOGO">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptatem delectus neque veniam, nostrum sequi? Voluptatibus natus eaque, numquam nihil modi, possimus aperiam iusto vel blanditiis suscipit perferendis fugit rem!</p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2>COMPAÑIA</h2>
+                <a href="#">ACERCA.</a>
+                <a href="../index.html">TRABAJOS.</a>
+                <a href="#">SERVICIOS.</a>
+            </div>
+            <div class="box-footer">
+                <h2>REDES SOCIALES.</h2>
+                <a href="#"><i class="fab fa-instagram-square"></i> INSTAGRAM</a>
+                <a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a>
+                <a href="#"><i class="fab fa-twitch"></i> TWITCH</a>
+                <a href="#"><i class="fab fa-youtube"></i> YOUTUBE</a>
+                <a href="#"><i class="fab fa-discord"></i> DISCORD</a>
+            </div>
+        </div>
+
+    </footer>
+    <!--FIN:FOOTER-->
     <script src="../Js/api.js"></script>
 </body>
 </html>
