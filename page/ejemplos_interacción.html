@@ -15,21 +15,47 @@
     <a onclick="elegirPokemon('Bulbasaur')">Bulbasaur</a>
     
     <!--CAMBIAR DE CONTENIDO HTML: -->
-    <h2>Cambio de contenido HTML</h2>
+    <h2>[1]Cambio de contenido HTML</h2>
     <p id="parrafo">¡Hola mundo!</p>
 
     <!--IDENTIFICANDO ELEMENTOS HTML POR ID: -->
-    <h2>IDENTIFICANDO ELEMENTOS HTML POR ID</h2>
+    <h2>[2]IDENTIFICANDO ELEMENTOS HTML POR ID</h2>
     <p id="intro">¡Hola Mundo!</p>
     <p>Utilizaremos el metodo 'getElementById'</p>
 
     <p id="demo"></p>
 
     <!--IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS: -->
-    <h2>IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS</h2>
+    <h2>[3]IDENTIFICANDO ELEMENTOS HTML POR ETIQUETAS</h2>
     <p>¡Hola Mundo!</p>
     <p>Utilizaremos el metodo 'getElementsByTagsName'</p>
     <p id="demo2"></p>
+
+    <!--IDENTIFANCO ELEMENTOS HTML POR CLASE-->
+    <h2>[4]IDENTIFANCO ELEMENTOS HTML POR CLASE</h2>
+    <p class="intro">¡HOLA MUNDO!</p>
+    <p class="intro">¡Utilizaremos el metodo 'getElementsByClassName'!</p>
+
+    <p id="demo3"></p>
+
+    <!--IDENTIFANCO ELEMENTOS HTML POR SELECTOR CSS-->
+    <h2>[5]IDENTIFANCO ELEMENTOS HTML POR CLASE</h2>
+    <p class="comienzo">¡HOLA MUNDO!</p>
+    <p class="comienzo">¡Utilizaremos el metodo 'querySelectorAll'!</p>
+
+    <p id="demo4"></p>
+
+    <!--IDENTIFANCO ELEMENTOS HTML POR DOCUMENT.FORMS-->
+    <h2>[6]IDENTIFANCO ELEMENTOS HTML POR documwnt.forms</h2>
+    
+    <form id="form" action="/">
+        Primer nombre: <input type="text" name="nombre" value="Juan"><br>
+        Apellido: <input type="text" name="apellido" value="Perez"><br>
+    </form>
+
+    <button onclick="mostrarDatos()">Presiona para imprimir el formulario.</button>
+
+    <p id="demo5"></p>
 
     <script>
         function elegirPokemon(pokemon){
@@ -48,6 +74,25 @@
         document.getElementsById("demo2").innerHTML = "El texto del primer párrafo es: " + etiquetas;
         */
        
+        //IDENTIFANCO ELEMENTOS HTML POR CLASE:
+        var clase = document.getElementsByClassName("intro");
+        document.getElementById('demo3').innerHTML = "El texto del segundo párrafo con la clase 'intro' es: " + clase[1].innerHTML;
+
+        //IDENTIFANCO ELEMENTOS HTML POR SELECTOR CSS:
+        var etiquetaClase = document.querySelectorAll("p.comienzo");
+        document.getElementById('demo4').innerHTML = "El texto del primer párrafo con la clase 'comienzo' es: " + etiquetaClase[0].innerHTML;
+
+        //IDENTIFANCO ELEMENTOS HTML POR DOCUMENT.FORMS:
+        /*function mostrarDatos() {
+            let x = document.forms["form"];
+            let texto = "";
+            for(let i = 0; i < x.lenght; i++){
+                texto += x.elements[i].value + "<br/>";
+            }
+            document.getElementById('demo5').innerHTML = texto;
+        } */
+
+        
     </script>
 </body>
 </html>
