@@ -1,0 +1,74 @@
+* {
+ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+   }
+   :root{
+     --bg-primary: red;
+     --bg-blue: blue;
+   }
+   body{
+ background-image: url('../Planetas/tierra.png');
+ background-size: 100%;
+ background-repeat: no-repeat;
+ font-family: 'Josefin Sans', sans-serif;
+}
+   
+.btn{
+ border: none;
+   
+ background-color: var(--bg-primary);
+ border-radius: 10px;
+ padding: 2px 5px;
+ border: 2px dashed rgb(150, 150, 22);
+   
+ cursor: pointer;
+}
+
+.btn:hover{
+ background-color: rgb(178, 214, 214);
+ color: white;
+ width: 200px;
+ height: 100px;
+}
+   
+a{
+ text-decoration: none;
+ color: rgb(175, 124, 133);
+}
+
+a:hover{
+ color: rgb(250, 228, 186);
+}
+
+nav{
+ display: flex;
+   
+ flex-wrap: wrap;
+ padding-block: 10px;   
+}
+
+.hijo1{
+ flex: 1 1 70%;
+   
+ display: flex;
+ justify-content: space-evenly;   
+}
+   
+.hijo2{
+ flex: 1 1 30%;
+   
+ display: flex;
+ justify-content: center;
+}
+
+.img__container{
+ width: 25px;
+ height:25px;
+}
+
+.logo{
+ width: 100%;
+ object-fit: cover;
+}

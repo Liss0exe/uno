@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/algo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+  <title>Change color</title>
+  
+</head>
+<body>
+  <nav>
+    <div class="hijo1">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="hijo2">
+      <div class="img-container">
+        <img class="logo" src="../src/charmander.png" alt="logo">
+      </div>
+    </div>
+  </nav>
+
+  <button class="btn">Click me</button>
+
+  <button onclick="showAlert()">Show Alert!</button>
+
+  <button value="red" onclick="changeColor(value)">Red</button>
+  <button value="blue" onclick="changeColor(value)">Blue</button>
+  <button value="black" onclick="changeColor(value)">Black</button>
+  <button value="#2b5db3" onclick="changeColor(value)">Blue hex</button>
+
+
+  <script>
+    const changeColor=(color)=>{
+      document.body.style.backgroundColor = color;
+    }
+
+    const showAlert = ()=>{
+      alert("Hello World!");
+    }
+  </script>
+</body>
+</html>

@@ -74,3 +74,26 @@ a {
  padding-top: 50px;
  margin:10px auto;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+ .lado_izq {
+  background-color: rgb(236, 199, 233);
+ }
+
+ summary {
+  font-size: 30px;
+ }
+
+ a {
+  font-size: 17px;
+ }
+}
+ @media screen and (min-width: 1025px){
+ summary {
+  font-size: 30px;
+ }
+
+ a {
+  font-size: 19px;
+ }
+}
